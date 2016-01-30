@@ -9,8 +9,9 @@ Follow [this link](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_i
 
 Follow [this link](http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/) to install the OpenCV libraries in OS X.
 
-If you are using the yum package manager, the following command should successfully install OpenCV:
-`yum install numpy opencv*`
+If you are using the yum package manager (Fedora or other relative distros), the following command should successfully install OpenCV:
+
+`sudo yum install numpy opencv*`
 
 ### Install a Python Editor
 You can use whatever editor you want for this.  I would recommend [PyCharm](https://www.jetbrains.com/pycharm/).  Visual Studio and XCode are also great options.
