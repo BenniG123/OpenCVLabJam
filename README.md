@@ -13,6 +13,8 @@ If you are using the yum package manager (Fedora or other relative distros), the
 
 `sudo yum install numpy opencv*`
 
+This may not give you access to the latest OpenCV version like building from source, so there may be compatibility issues involved.  It's worth a shot to try.
+
 ### Install a Python Editor
 You can use whatever editor you want for this.  I would recommend [PyCharm](https://www.jetbrains.com/pycharm/).  Visual Studio and XCode are also great options.
 
