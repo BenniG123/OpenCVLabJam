@@ -1,6 +1,10 @@
 import numpy as np
 import cv2
 
+# This should grab from your webcam.  If you have multiple web cams,
+# you can change the index to get video from a different one.
+# To take in footage from a video file, change the index to the relative path of
+# your video file aka 'test_footage.mp4'
 cap = cv2.VideoCapture(0)
 
 while(True):

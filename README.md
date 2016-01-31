@@ -36,9 +36,15 @@ Now change to the face-detect directory and try out face detection using:
 
 [Here's some good info on haar cascade classifiers](http://docs.opencv.org/master/d7/d8b/tutorial_py_face_detection.html#gsc.tab=0).  Face detection is a very advanced subject and using machine learning to recognize faces has been proven to be an effective solution.  We are utilizing training done by professionals to help us.
 
-**Thankless Task:** Use haarcascade_eye.xml as a second classifier to detect eyes in the images given.  Draw rectangles around the both the eyes and faces.
+**Thankless Task:** Use haarcascade_eye.xml as a second classifier to detect eyes in the images given.  Draw rectangles around the both the eyes and faces (this may not work perfectly, just try your best to find settings that get the most eyes.)
 
 **Fun Extra:** All of the premade haarcascade classifier files are found where you installed opencv in opencv/data/haarcascades/.  If you so choose, you can pick one of them and your own image and try to find anything that has been trained.
 
 ## Video Stream Processing
+Now that you have a few handy tools under your belt, feel free to go wild with this last step!
 
+Run video-stream/video.py to see the output from your webcam.  You can access the frames in real time.  If you don't have a webcam on your device, just download any video format file and specify the path as the argument of `cv2.VideoCapture()`.
+
+**Do something awesome:** With your basic toolset, do some frame by frame processing .  A good starting point is to run the face detection on your video feed and see if it can track your face!
+
+**More OpenCV Tools:** [Background Subtraction](http://docs.opencv.org/master/db/d5c/tutorial_py_bg_subtraction.html#gsc.tab=0), [Circle Detection](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_houghcircles/py_houghcircles.html), [Optical Flow](http://docs.opencv.org/master/d7/d8b/tutorial_py_lucas_kanade.html#gsc.tab=0), [Edge Detection](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html)
