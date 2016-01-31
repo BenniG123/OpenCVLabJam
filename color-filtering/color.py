@@ -10,33 +10,40 @@ hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 def nothing(x):
     pass
 
+# Create a UI Window
 cv2.namedWindow('Color Filter Parameters');
 
 # Create trackbars
 cv2.createTrackbar('H Max','Color Filter Parameters',0,255,nothing)
-cv2.createTrackbar('S Max','Color Filter Parameters',0,255,nothing)
-cv2.createTrackbar('V Max','Color Filter Parameters',0,255,nothing)
 cv2.createTrackbar('H Min','Color Filter Parameters',0,255,nothing)
+cv2.createTrackbar('S Max','Color Filter Parameters',0,255,nothing)
 cv2.createTrackbar('S Min','Color Filter Parameters',0,255,nothing)
+cv2.createTrackbar('V Max','Color Filter Parameters',0,255,nothing)
 cv2.createTrackbar('V Min','Color Filter Parameters',0,255,nothing)
 
-# lower_bounds = np.array([50,50,50])
-# upper_bounds = np.array([130,255,255])
+# Set the trackbar positions (default 0)
+cv2.setTrackbarPos('H Max','Color Filter Parameters', 255)
+cv2.setTrackbarPos('V Max','Color Filter Parameters', 255)
+cv2.setTrackbarPos('S Max','Color Filter Parameters', 255)
 
 while True :
 
+    # Get all trackbar positions for filtering.
     h_max = cv2.getTrackbarPos('H Max','Color Filter Parameters')
-    h_min = cv2.getTrackbarPos('H Mix','Color Filter Parameters')
+    h_min = cv2.getTrackbarPos('H Min','Color Filter Parameters')
     s_max = cv2.getTrackbarPos('S Max','Color Filter Parameters')
     s_min = cv2.getTrackbarPos('S Min','Color Filter Parameters')
     v_max = cv2.getTrackbarPos('V Max','Color Filter Parameters')
     v_min = cv2.getTrackbarPos('V Min','Color Filter Parameters')
 
-    # Threshold the HSV image
+    # Threshold the HSV image.  Lower bounds and upper bounds must be numpy arrays
     mask = cv2.inRange(hsv, np.array([h_min, s_min, v_min]), np.array([h_max, s_max, v_max]))
 
     # Bitwise-AND mask and original image
     res = cv2.bitwise_and(img,img, mask= mask)
+
+    # To draw a rectangle - image, point1, point2, color, line thickness
+    # cv2.rectangle(res, (0,0), (50,50), (0,255,0),3)
 
     # cv2.imshow('image',img)
     # cv2.imshow('mask',mask)

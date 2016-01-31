@@ -19,6 +19,15 @@ This may not give you access to the latest OpenCV version like building from sou
 You can use whatever editor you want for this.  I would recommend [PyCharm](https://www.jetbrains.com/pycharm/).  Visual Studio and XCode are also great options.
 
 ## Color Filtering
+Try running color-filtering/color.py and see what happens.  Follow [this link](https://en.wikipedia.org/wiki/HSL_and_HSV) to learn more about HSV image parameters.
+
+**Make sure you hit escape to exit the program.  Don't hit X in the corner of the window.  Some GUI features are messed up (at least on linux)**
+
+What we are doing is a very simple image processing technique known as thresholding.  Some parts of the image are within the desired parameters, and are thresholded to a 1 (White pixel) while those outside our desired parameters are thrown out and set to 0 (black pixels.)  This is very helpful for finding parts of an image that are a certain color.  You are seeing a bitmasked output by default, so the original image is overlaid with the "white" or high thresholded pixels.
+
+Try and set the different parameters to only view a single cartridge.
+
+**Free cookie:** Using cartridge.png and [OpenCV contours](http://docs.opencv.org/master/dd/d49/tutorial_py_contour_features.html#gsc.tab=0), draw a rectangle around whichever pokemon cartridge your settings are selecting.
 
 ## Face Detection
 
