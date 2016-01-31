@@ -25,9 +25,9 @@ Try running color-filtering/color.py and see what happens.  Follow [this link](h
 
 What we are doing is a very simple image processing technique known as thresholding.  Some parts of the image are within the desired parameters, and are thresholded to a 1 (White pixel) while those outside our desired parameters are thrown out and set to 0 (black pixels.)  This is very helpful for finding parts of an image that are a certain color.  You are seeing a bitmasked output by default, so the original image is overlaid with the "white" or high thresholded pixels.
 
-Try and set the different parameters to only view a single cartridge.
+**First Step:** Have your program hardcoded to select only one cartridge on startup.
 
-**Free cookie:** Using cartridge.png and [OpenCV contours](http://docs.opencv.org/master/dd/d49/tutorial_py_contour_features.html#gsc.tab=0), draw a rectangle around whichever pokemon cartridge your settings are selecting.
+**Free cookie:** Using [OpenCV contours](http://docs.opencv.org/master/dd/d49/tutorial_py_contour_features.html#gsc.tab=0), draw a rectangle around whichever pokemon cartridge your settings are selecting.
 
 ## Face Detection
 

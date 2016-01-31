@@ -37,6 +37,7 @@ while True :
     v_min = cv2.getTrackbarPos('V Min','Color Filter Parameters')
 
     # Threshold the HSV image.  Lower bounds and upper bounds must be numpy arrays
+    # Our binary thresholded image is saved into mask
     mask = cv2.inRange(hsv, np.array([h_min, s_min, v_min]), np.array([h_max, s_max, v_max]))
 
     # Bitwise-AND mask and original image
@@ -44,6 +45,9 @@ while True :
 
     # To draw a rectangle - image, point1, point2, color, line thickness
     # cv2.rectangle(res, (0,0), (50,50), (0,255,0),3)
+
+    # To find contours of the thresholded image
+    # im2, contours, hierarchy = cv2.findContours(mask,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
 
     # cv2.imshow('image',img)
     # cv2.imshow('mask',mask)
