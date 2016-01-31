@@ -17,9 +17,10 @@ faces = faceCascade.detectMultiScale(
     gray,
     scaleFactor=1.1,
     minNeighbors=5,
-    minSize=(30, 30),
-    flags = cv2.HAAR_SCALE_IMAGE
+    minSize=(30, 30)
 )
+
+#, flags = cv2.cv.CV_HAAR_SCALE_IMAGE
 
 print "Found {0} faces!".format(len(faces))
 
