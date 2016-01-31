@@ -43,11 +43,11 @@ while True :
     # Bitwise-AND mask and original image
     res = cv2.bitwise_and(img,img, mask= mask)
 
-    # To draw a rectangle - image, point1, point2, color, line thickness
-    # cv2.rectangle(res, (0,0), (50,50), (0,255,0),3)
-
     # To find contours of the thresholded image
     # im2, contours, hierarchy = cv2.findContours(mask,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+
+    # To draw a rectangle - image, point1, point2, color, line thickness
+    # cv2.rectangle(res, (0,0), (50,50), (0,255,0),3)
 
     # cv2.imshow('image',img)
     # cv2.imshow('mask',mask)
