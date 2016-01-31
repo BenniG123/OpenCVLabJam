@@ -30,5 +30,10 @@ What we are doing is a very simple image processing technique known as threshold
 **Free cookie:** Using [OpenCV contours](http://docs.opencv.org/master/dd/d49/tutorial_py_contour_features.html#gsc.tab=0), draw a rectangle around whichever pokemon cartridge your settings are selecting.
 
 ## Face Detection
+Now change to the face-detect directory and try out face detection using `face.py <image name> <cascade classifier file name>`.  [Here's some good info on haar cascade classifiers](http://docs.opencv.org/master/d7/d8b/tutorial_py_face_detection.html#gsc.tab=0).  Face detection is a very advanced subject and using machine learning to recognize faces has been proven to be a very effective solution.  We are utilizing training done by professionals to help us.
 
-## 
+**First Step:** Have your program hardcoded to select only one cartridge on startup.
+
+**Free cookie:** Using [OpenCV contours](http://docs.opencv.org/master/dd/d49/tutorial_py_contour_features.html#gsc.tab=0), draw a rectangle around whichever pokemon cartridge your settings are selecting.
+
+
