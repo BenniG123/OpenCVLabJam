@@ -1,3 +1,5 @@
+![Logo](http://files.is.tue.mpg.de/obroscaru/img2.png)
+
 # OpenCVLabJam
 Necessary source files and resources for the Iowa State Spring 2016 OpenCV Lab Jam
 
