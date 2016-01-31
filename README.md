@@ -5,6 +5,8 @@ Necessary source files and resources for the Iowa State Spring 2016 OpenCV Lab J
 
 ## Setup
 ### Installing OpenCV
+Make sure Python 2.7 is installed on your machine.
+
 Follow [this link](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html#install-opencv-python-in-windows) to install the OpenCV Libraries in Windows.
 
 Follow [this link](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html) to install the OpenCV libraries in Linux.
@@ -19,6 +21,8 @@ This may not give you access to the latest OpenCV version like building from sou
 
 ### Install a Python Editor
 You can use whatever editor you want for this.  I would recommend [PyCharm](https://www.jetbrains.com/pycharm/).  Visual Studio and XCode are also great options.
+
+**Wait until the lab jam to continue**
 
 ## Color Filtering
 Try running color-filtering/color.py and see what happens.  Follow [this link](https://en.wikipedia.org/wiki/HSL_and_HSV) to learn more about HSV image parameters.
