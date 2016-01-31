@@ -36,5 +36,9 @@ Now change to the face-detect directory and try out face detection using:
 
 [Here's some good info on haar cascade classifiers](http://docs.opencv.org/master/d7/d8b/tutorial_py_face_detection.html#gsc.tab=0).  Face detection is a very advanced subject and using machine learning to recognize faces has been proven to be an effective solution.  We are utilizing training done by professionals to help us.
 
-**Thankless Task:** Use haarcascade_eye.xml as a second classifier to detect eyes in the images given.  Draw rectangles around the eyes.
+**Thankless Task:** Use haarcascade_eye.xml as a second classifier to detect eyes in the images given.  Draw rectangles around the both the eyes and faces.
+
+**Fun Extra:** All of the premade haarcascade classifier files are found where you installed opencv in opencv/data/haarcascades/.  If you so choose, you can pick one of them and your own image and try to find 
+
+## Video Stream Processing
 

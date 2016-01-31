@@ -12,7 +12,7 @@ faceCascade = cv2.CascadeClassifier(cascPath)
 image = cv2.imread(imagePath)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-# Detect faces in the image
+# Detect faces in the image.  Tweak these settings to get better matches with different images
 faces = faceCascade.detectMultiScale(
     gray,
     scaleFactor=1.1,
@@ -22,7 +22,7 @@ faces = faceCascade.detectMultiScale(
 
 #, flags = cv2.cv.CV_HAAR_SCALE_IMAGE
 
-print "Found {0} faces!".format(len(faces))
+print "Found {0} face(s)!".format(len(faces))
 
 # Draw a rectangle around the faces
 for (x, y, w, h) in faces:
