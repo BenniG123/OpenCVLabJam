@@ -5,7 +5,10 @@ Necessary source files and resources for the Iowa State Spring 2016 OpenCV Lab J
 
 ## Setup
 ### Installing OpenCV
-Make sure 32 bit (NOT 64 bit) Python 2.7 is installed on your machine.
+Make sure Python 2.7 is installed on your machine.
+
+**Make sure you copy cv2.pyd from the x86 directory under OpenCV**
+**Make sure you have numpy version 9 at minimum**
 
 Follow [this link](http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html#install-opencv-python-in-windows) to install the OpenCV Libraries in Windows.
 
